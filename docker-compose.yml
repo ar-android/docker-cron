@@ -1,0 +1,8 @@
+version: "2.0"
+
+services:
+  docker-cron:
+    build: .
+    image: docker-cron
+    volumes:
+      - ./cron.log:/var/log/cron.log
